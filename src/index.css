@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 font-sans; /* Added font-sans for consistency */
+  }
+  h1 {
+    @apply text-h1 font-bold;
+  }
+  h2 {
+    @apply text-h2 font-semibold;
+  }
+  h3 {
+    @apply text-h3 font-semibold;
+  }
+  h4 {
+    @apply text-h4 font-medium;
+  }
+  h5 {
+    @apply text-h5 font-medium;
+  }
+  h6 {
+    @apply text-h6 font-medium;
+  }
+  p {
+    @apply text-body-base;
+  }
+}
+
+@layer components {
+  /* Global hover effects for interactive elements */
+  .btn-primary, .gradient-bg {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .btn-primary:hover, .gradient-bg:hover {
+    @apply opacity-90 shadow-md;
+  }
+  a {
+    @apply transition-all duration-200 ease-in-out;
+  }
+  a:hover {
+    @apply text-primary-600; /* Example hover color, adjust as needed */
+  }
+  /* Specific styling for gradient buttons that don't have btn-primary */
+  .gradient-bg {
+    @apply hover:scale-[1.01] active:scale-95;
+  }
+}
+
+@layer utilities {
+  .gradient-bg {
+    @apply bg-gradient-to-r from-action-blue to-deep-navy;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent;
+  }
+}
