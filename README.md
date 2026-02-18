@@ -35,9 +35,6 @@ It demonstrates real-world frontend architecture including authentication, dashb
 
 ---
 
-## 📸 Screenshots
-
-(Add your project screenshots here later)
 
 ---
 
@@ -47,9 +44,9 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/aidevyasmin/skillbridge-internship-for-student-.git
-cd skillbridge
-npm install
-npm run dev
+#cd skillbridge
+##npm install
+##npm run dev
 🌍 Live Demo
 
 (Deploy on Vercel / Netlify and paste link here)
